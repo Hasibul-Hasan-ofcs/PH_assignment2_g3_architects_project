@@ -1,0 +1,25 @@
+footer {
+  min-height: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff4e7;
+  border-radius: 8px;
+  width: 105rem;
+  margin: 8rem auto 15rem auto;
+  padding: 1rem 0;
+}
+
+footer p {
+  font-weight: 400;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #424242;
+}
+
+/* responsiveness */
+@media only screen and (max-width: 1060px) {
+  footer {
+    width: 96%;
+  }
+}

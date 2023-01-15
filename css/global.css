@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-size: 10px;
+  font-family: "Work Sans", sans-serif;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 5rem;
+  line-height: 5.5rem;
+  text-align: center;
+  color: #131313;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 4.3rem;
+  color: #131313;
+}
+
+h5 {
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  color: #131313;
+}
+
+p {
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  text-align: center;
+  color: #727272;
+}
+
+.explore_more_button {
+  background: #ff900e;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  padding: 1.25rem 2rem;
+  border: none;
+
+  transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+  cursor: pointer;
+
+  position: relative;
+  overflow: hidden;
+}
+
+.explore_more_button::before {
+  content: "";
+  height: 20rem;
+  width: 1px;
+  background-color: #fff;
+  box-shadow: 1px 1px 10px 5px #fff;
+  transition: all 0.3s linear;
+  transform: rotate(-45deg) translate(-50%, -50%);
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.explore_more_button:hover::before {
+  left: 200%;
+}
+
+.explore_more_button:hover {
+  box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.2);
+}
