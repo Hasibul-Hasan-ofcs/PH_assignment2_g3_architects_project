@@ -35,6 +35,7 @@ header {
   list-style: none;
   display: flex;
   gap: 5rem;
+  transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .navigation .nav_items li {
@@ -43,6 +44,11 @@ header {
   line-height: 2rem;
   text-align: center;
   color: #424242;
+  cursor: pointer;
+}
+
+.navigation .nav_items li:hover {
+  color: #ff900e;
 }
 
 /* header main portion */
