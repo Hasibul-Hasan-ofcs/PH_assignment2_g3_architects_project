@@ -1,3 +1,66 @@
+.how_it_works {
+  width: 105rem;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  padding: 10rem 0;
+}
+
+.how_it_works > h2 {
+  text-align: center;
+  padding-bottom: 8rem;
+}
+
+.how_it_works .inner_section {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.how_it_works .container {
+  display: flex;
+  gap: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(114, 114, 114, 0.4);
+}
+
+.how_it_works .container .left_portion {
+  width: 30%;
+}
+
+.how_it_works .container .img_right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.how_it_works .container .left_portion img {
+  height: 8rem;
+}
+
+.how_it_works .container .right_portion {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.how_it_works .container .right_portion p:nth-child(even) {
+  text-align: left;
+}
+
+.how_it_works .container .right_portion p.text_right {
+  text-align: right;
+}
+
+.how_it_works .container .right_portion:nth-child(odd) {
+  align-items: flex-end;
+}
+
+.how_it_works .container .right_portion:nth-child(even) {
+  align-items: flex-start;
+}
+
 .quick_features {
   display: flex;
   gap: 5rem;
@@ -236,6 +299,10 @@
 
 /* responsiveness */
 @media only screen and (max-width: 1060px) {
+  .how_it_works {
+    width: 95%;
+  }
+
   .quick_features {
     width: 100%;
     padding: 7rem 2rem;
