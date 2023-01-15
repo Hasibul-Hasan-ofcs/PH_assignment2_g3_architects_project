@@ -114,9 +114,10 @@
   margin: 0 auto;
 }
 
-.some_facts p {
+.some_facts > p {
   text-align: left;
   max-width: 42rem;
+  padding-top: 1.6rem;
 }
 
 .facts_container {
@@ -268,6 +269,15 @@
 }
 
 @media only screen and (max-width: 825px) {
+  .some_facts h2 {
+    text-align: center;
+  }
+
+  .some_facts p {
+    text-align: center;
+    margin: 0 auto;
+  }
+
   .quick_features {
     flex-direction: column-reverse;
   }
@@ -275,10 +285,58 @@
   .quick_features .feature_details {
     align-items: center;
   }
+
+  .quick_features .feature_details h2 {
+    text-align: center;
+  }
+
+  .quick_features .feature_details p {
+    text-align: center;
+  }
 }
 
 @media only screen and (max-width: 768px) {
   .sponsors {
     justify-content: space-around;
+  }
+
+  .best_features .best_feature_img {
+    height: auto;
+    width: 100%;
+    /* padding: 0 2rem; */
+  }
+
+  .best_features .best_feature_img img {
+    height: auto;
+    width: 100%;
+  }
+
+  .experience_toast {
+    transform: translate(0%, 12%);
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .quick_features .image_container {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
+
+  .quick_features .image_container {
+    height: auto;
+    width: 100%;
+    /* padding: 0 2rem; */
+  }
+
+  .experience_toast {
+    padding: 1.2rem 1.3rem;
+  }
+
+  .experience_toast h1 {
+    font-size: 3.5rem;
+  }
+
+  .experience_toast h5 {
+    font-size: 1.4rem;
   }
 }
