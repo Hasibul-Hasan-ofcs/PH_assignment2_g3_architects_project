@@ -72,7 +72,7 @@ p {
 }
 
 .explore_more_button:hover::before {
-  left: 200%;
+  left: 220%;
 }
 
 .explore_more_button:hover {
